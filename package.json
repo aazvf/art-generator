@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "deploy": "nuxt generate && aws s3 sync .output/public s3://patterns.aazvf.art/ --profile s3deploy --delete"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^5.3.2",
+    "nuxt": "3.0.0-rc.8"
+  },
+  "dependencies": {
+    "color-scheme": "^1.0.1",
+    "md5": "^2.3.0",
+    "p5": "^1.4.2"
+  }
+}
